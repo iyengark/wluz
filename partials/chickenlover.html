@@ -1,0 +1,7 @@
+<!-- partials/chickenlover.html -->
+<h4>{{page.title}}</h4>
+<span ng-repeat="clContent in page.content"><div>
+	<pre ng-bind-template="{{clContent.approveDate * 1000 | date : 'medium'}} --- {{clContent.commentBody}}">
+		<span ng-show="clContent.articleURL">{{clContent.articleURL}}</span>
+	</pre></div>
+</span>
